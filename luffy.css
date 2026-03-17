@@ -1,0 +1,626 @@
+        /* =============================================
+           VARIABLES — misma paleta que index.html
+        ============================================= */
+        :root {
+            --oro: #D4A017;
+            --oro-claro: #F0C040;
+            --marino: #0D1B2A;
+            --marino-claro: #152538;
+            --marino-medio: #1E3450;
+            --texto-claro: #E8EAED;
+            --texto-muted: #8A96A4;
+            --texto-secundario: #B0BAC6;
+            --acento: #C0392B;
+            --borde: rgba(212, 160, 23, 0.25);
+        }
+
+        /* =============================================
+           RESET Y BASE
+        ============================================= */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: var(--marino);
+            color: var(--texto-claro);
+            font-family: 'Outfit', sans-serif;
+            font-size: 1rem;
+            line-height: 1.6;
+            min-height: 100vh;
+        }
+
+        a {
+            color: var(--oro);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* =============================================
+           HEADER / NAV
+        ============================================= */
+        .site-nav {
+            background-color: var(--marino-claro);
+            border-bottom: 1px solid var(--borde);
+            padding: 0.9rem 2rem;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .nav-back {
+            color: var(--oro);
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 0.4rem;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .nav-back:hover {
+            opacity: 1;
+            text-decoration: none;
+        }
+
+        .nav-separator {
+            color: var(--texto-muted);
+            font-size: 0.8rem;
+        }
+
+        .nav-current {
+            color: var(--texto-secundario);
+            font-size: 0.85rem;
+        }
+
+        /* =============================================
+           HERO DEL ACTOR
+        ============================================= */
+        .actor-hero {
+            background: linear-gradient(
+                135deg,
+                var(--marino-claro) 0%,
+                var(--marino) 60%,
+                #0A1520 100%
+            );
+            border-bottom: 1px solid var(--borde);
+            padding: 3rem 2rem;
+        }
+
+        .actor-hero-inner {
+            max-width: 60rem;
+            margin: 0 auto;
+            display: flex;
+            gap: 2.5rem;
+            align-items: flex-start;
+        }
+
+        .actor-photo-wrap {
+            flex-shrink: 0;
+            position: relative;
+        }
+
+        .actor-photo {
+            width: 220px;
+            height: 330px;
+            object-fit: cover;
+            object-position: top;
+            border-radius: 6px;
+            border: 2px solid var(--borde);
+            display: block;
+        }
+
+        /* Badge del personaje principal */
+        .actor-badge {
+            position: absolute;
+            bottom: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: var(--oro);
+            color: var(--marino);
+            font-size: 0.7rem;
+            font-weight: 600;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            padding: 4px 14px;
+            border-radius: 20px;
+            white-space: nowrap;
+        }
+
+        .actor-info {
+            padding-top: 0.5rem;
+            flex: 1;
+        }
+
+        .actor-name {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 3rem;
+            font-weight: 300;
+            color: var(--texto-claro);
+            line-height: 1.1;
+            margin-bottom: 0.3rem;
+        }
+
+        .actor-known-for {
+            font-size: 0.85rem;
+            color: var(--oro);
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+            font-weight: 500;
+        }
+
+        /* Datos rápidos en fila */
+        .quick-facts {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+            margin-bottom: 1.8rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--borde);
+        }
+
+        .fact {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .fact-label {
+            font-size: 0.7rem;
+            color: var(--texto-muted);
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .fact-value {
+            font-size: 0.95rem;
+            color: var(--texto-claro);
+            font-weight: 400;
+        }
+
+        /* Biografía corta en el hero */
+        .actor-bio-short {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.15rem;
+            color: var(--texto-secundario);
+            line-height: 1.75;
+            font-style: italic;
+            max-width: 38rem;
+        }
+
+        /* =============================================
+           REDES SOCIALES
+        ============================================= */
+        .social-links {
+            display: flex;
+            gap: 0.8rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .social-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.4rem;
+            padding: 0.45rem 1rem;
+            border: 1px solid var(--borde);
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--texto-secundario);
+            letter-spacing: 0.5px;
+            transition: border-color 0.2s, color 0.2s;
+            background: transparent;
+        }
+
+        .social-btn:hover {
+            border-color: var(--oro);
+            color: var(--oro);
+            text-decoration: none;
+        }
+
+        .social-icon {
+            font-size: 0.9rem;
+        }
+
+        /* =============================================
+           LAYOUT PRINCIPAL (2 columnas)
+        ============================================= */
+        .main-content {
+            max-width: 60rem;
+            margin: 0 auto;
+            padding: 2.5rem 2rem;
+            display: grid;
+            grid-template-columns: 1fr 280px;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        /* =============================================
+           COLUMNA IZQUIERDA
+        ============================================= */
+
+        /* Título de sección reutilizable */
+        .section-heading {
+            font-family: 'Cormorant Garamond', serif;
+            font-size: 1.6rem;
+            font-weight: 400;
+            color: var(--texto-claro);
+            margin-bottom: 0.3rem;
+        }
+
+        .section-line {
+            width: 40px;
+            height: 2px;
+            background: var(--oro);
+            border: none;
+            margin-bottom: 1.5rem;
+        }
+
+        /* --- Biografía completa --- */
+        .bio-section {
+            margin-bottom: 3rem;
+        }
+
+        .bio-section p {
+            color: var(--texto-secundario);
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        /* --- Filmografía / proyectos --- */
+        .projects-section {
+            margin-bottom: 3rem;
+        }
+
+        .projects-grid {
+            display: flex;
+            overflow-x: auto;
+            gap: 14px;
+            padding-bottom: 0.8rem;
+            scrollbar-width: thin;
+            scrollbar-color: var(--oro) var(--marino-claro);
+        }
+
+        .projects-grid::-webkit-scrollbar {
+            height: 4px;
+        }
+        .projects-grid::-webkit-scrollbar-track {
+            background: var(--marino-claro);
+            border-radius: 2px;
+        }
+        .projects-grid::-webkit-scrollbar-thumb {
+            background: var(--oro);
+            border-radius: 2px;
+        }
+
+        .project-card {
+            flex-shrink: 0;
+            width: 120px;
+            cursor: pointer;
+            transition: transform 0.2s;
+        }
+
+        .project-card:hover {
+            transform: translateY(-3px);
+        }
+
+        .project-card img {
+            width: 120px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 5px;
+            border: 1px solid var(--borde);
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        .project-title {
+            font-size: 0.8rem;
+            font-weight: 500;
+            color: var(--texto-claro);
+            line-height: 1.3;
+            margin-bottom: 2px;
+        }
+
+        .project-year {
+            font-size: 0.75rem;
+            color: var(--texto-muted);
+        }
+
+        /* --- Tabla de filmografía detallada --- */
+        .filmography-section {
+            margin-bottom: 3rem;
+        }
+
+        .film-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9rem;
+        }
+
+        .film-table thead th {
+            text-align: left;
+            font-size: 0.7rem;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            color: var(--texto-muted);
+            font-weight: 500;
+            padding: 0 0.5rem 0.8rem;
+            border-bottom: 1px solid var(--borde);
+        }
+
+        .film-table tbody tr {
+            border-bottom: 1px solid rgba(255,255,255,0.04);
+            transition: background 0.15s;
+        }
+
+        .film-table tbody tr:hover {
+            background: rgba(212,160,23,0.04);
+        }
+
+        .film-table td {
+            padding: 0.8rem 0.5rem;
+            vertical-align: top;
+        }
+
+        .film-year {
+            color: var(--texto-muted);
+            font-size: 0.85rem;
+            white-space: nowrap;
+            width: 50px;
+        }
+
+        .film-dot {
+            width: 20px;
+            text-align: center;
+            color: var(--borde);
+        }
+
+        .film-dot span {
+            display: inline-block;
+            width: 8px;
+            height: 8px;
+            border: 1px solid var(--texto-muted);
+            border-radius: 50%;
+        }
+
+        .film-name {
+            font-weight: 500;
+            color: var(--texto-claro);
+        }
+
+        .film-episodes {
+            font-size: 0.8rem;
+            color: var(--oro);
+            font-weight: 400;
+        }
+
+        .film-role {
+            color: var(--texto-muted);
+            font-size: 0.85rem;
+        }
+
+        .film-role strong {
+            color: var(--texto-secundario);
+            font-weight: 500;
+        }
+
+        /* =============================================
+           COLUMNA DERECHA — sidebar
+        ============================================= */
+        .sidebar {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .sidebar-card {
+            background: var(--marino-claro);
+            border: 1px solid var(--borde);
+            border-radius: 8px;
+            padding: 1.25rem;
+        }
+
+        .sidebar-title {
+            font-size: 0.7rem;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: var(--oro);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        /* Personal Info */
+        .info-list {
+            display: flex;
+            flex-direction: column;
+            gap: 0.8rem;
+        }
+
+        .info-row {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+        }
+
+        .info-label {
+            font-size: 0.7rem;
+            color: var(--texto-muted);
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            font-weight: 500;
+        }
+
+        .info-value {
+            font-size: 0.9rem;
+            color: var(--texto-claro);
+        }
+
+        /* Premios */
+        .award-item {
+            display: flex;
+            gap: 0.8rem;
+            align-items: flex-start;
+            padding: 0.6rem 0;
+            border-bottom: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .award-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+        }
+
+        .award-icon {
+            font-size: 1rem;
+            margin-top: 1px;
+            flex-shrink: 0;
+        }
+
+        .award-name {
+            font-size: 0.85rem;
+            color: var(--texto-claro);
+            font-weight: 500;
+            line-height: 1.3;
+        }
+
+        .award-year {
+            font-size: 0.75rem;
+            color: var(--texto-muted);
+            margin-top: 2px;
+        }
+
+        /* =============================================
+           FOOTER
+        ============================================= */
+        footer {
+            border-top: 1px solid var(--borde);
+            padding: 1.5rem 2rem;
+            text-align: center;
+            color: var(--texto-muted);
+            font-size: 0.85rem;
+        }
+
+        footer a {
+            color: var(--oro);
+        }
+
+        /* =============================================
+           MEDIA QUERIES
+        ============================================= */
+
+        /* Tablet: 481px – 900px */
+        @media (max-width: 900px) {
+            .main-content {
+                grid-template-columns: 1fr;
+                gap: 0;
+            }
+
+            .sidebar {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 1.2rem;
+                margin-top: 0;
+            }
+        }
+
+        /* Tablet chica / móvil grande: hasta 768px */
+        @media (max-width: 768px) {
+            .actor-hero {
+                padding: 2rem 1.2rem;
+            }
+
+            .actor-hero-inner {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .actor-photo {
+                width: 180px;
+                height: 270px;
+            }
+
+            .actor-name {
+                font-size: 2.3rem;
+            }
+
+            .quick-facts {
+                justify-content: center;
+            }
+
+            .actor-bio-short {
+                text-align: center;
+            }
+
+            .social-links {
+                justify-content: center;
+            }
+
+            .main-content {
+                padding: 2rem 1.2rem;
+            }
+
+            .sidebar {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Móvil: hasta 480px */
+        @media (max-width: 480px) {
+            .site-nav {
+                padding: 0.8rem 1rem;
+            }
+
+            .actor-hero {
+                padding: 1.5rem 1rem;
+            }
+
+            .actor-photo {
+                width: 150px;
+                height: 225px;
+            }
+
+            .actor-name {
+                font-size: 1.9rem;
+            }
+
+            .actor-known-for {
+                font-size: 0.75rem;
+            }
+
+            .quick-facts {
+                gap: 1rem;
+            }
+
+            .main-content {
+                padding: 1.5rem 1rem;
+            }
+
+            .section-heading {
+                font-size: 1.3rem;
+            }
+
+            .film-table {
+                font-size: 0.82rem;
+            }
+
+            .project-card {
+                width: 100px;
+            }
+
+            .project-card img {
+                width: 100px;
+                height: 150px;
+            }
+        }
+
