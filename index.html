@@ -3,88 +3,139 @@
     <head>
         <title>Página de Ejemplo</title>
         <meta charset="UTF-8">
-	 <link rel="stylesheet" href="style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link href="css/tailwind-style.css" rel="stylesheet">
+       <link href="https://fonts.googleapis.com/css2?family=Rye&family=Crimson+Text:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
     </head>
-    <body class="font-sans max-w-4xl mx-auto">
-    <header class="h-12 w-full text-center mx-auto mt-5 border-b-2 border-sky-500">
-        <h1 class="font-medium text-3xl">My movies</h1>
+    <body>
+    <header class="page-header">
+        <h1>My Movies</h1>
     </header>
     
     <article>
       <section class= "fondo-imagen">
         <div class= "contenido">
         <div class="flex">
-            <img class="poster" src="https://www.themoviedb.org/t/p/w600_and_h900_face/zSqJ1qFq8NXFfi7JeIYMlzyR0dx.jpg" alt="the imitation game poster">
+            <img class="poster" src="https://www.themoviedb.org/t/p/w600_and_h900_face/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg" alt="one piece poster">
             <header>
              
-            <h1 class="movie-title"> The Imitation Game</h1>
+            <h1 class="movie-title"> One Piece (2023)</h1>
             <div class="movie-info">
-                <p>  12/19/2014 -</p> 
+                <p>  B -</p> 
                 <ul class="movie-genre"> 
-                    <li> History | </li>
-                    <li> Drama | </li>
-                    <li> Thriller | </li>
-                    <li> War </li>
+                    <li> Action | </li>
+                    <li> Adventure | </li>
+                    <li> Sci-Fi | </li>
+                    <li> Fantasy </li>
                 </ul>
-                <p>- 1h 53m</p>  
+                <p>- An 16 - episode series</p>  
             </div>         
             
-            <h1>Overview</h1>
-            <p>Based on the real life story of legendary cryptanalyst Alan
-            Turing, the film portrays the nail-biting race against time by
-            Turing and his brilliant team of code-breakers at Britain's
-            top-secret Government Code and Cypher School at Bletchley Park,
-            during the darkest days of World War II.</p>
+            <h2 class: "section-subtitle">Overview</h2>
+            <p class: "movie-overview">With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.</p>
 
             <details>
                 <summary>Production Details</summary>
-                <p> Budget: $14,000,000.00 </p>
-                <p> Revenue: $233,555,708.00</p>
+                <p> Budget: $18 million episode </p>
+                <p> Revenue: $320 million /p>
             </details>
             </header>
         </div>
        </div>
       </section>
 
-        <h1>Top Billed Cast</h1>
-        <div class="cast"> 
-            <div class="cast-item"> 
-                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/wz3MRiMmoz6b5X3oSzMRC9nLxY1.jpg" alt="Benedict Cumberbatch photo">
-                <h1> Benedict Cumberbatch</h1>
+         <div class="cast-section">
+            <h2 class="cast-title">Series Cast</h2>
+            <hr class="cast-divider">
+
+            <div class="cast">
+
+                <!-- Tarjeta 1 -->
+              <a href="luffy.html">
+                <div class="cast-item">
+                    <div class="wanted-label">✦ WANTED ✦</div>
+                    <div class="wanted-title">DEAD OR ALIVE</div>
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/93Z6KuFpqoDD1xN5kuswYQzbWe6.jpg"
+                         alt="Iñaki Godoy">
+                    <h3>Iñaki Godoy</h3>
+                    <h4> Monkey D. Luffy
+                    <div class="reward">3,000,000,000B.</div>
+                </div>
+                  </a>
+
+                <!-- Tarjeta 2 -->
+                <div class="cast-item">
+                    <div class="wanted-label">✦ WANTED ✦</div>
+                    <div class="wanted-title">DEAD OR ALIVE</div>
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/xfMmGq9ochn6lw8RHTVUewM0Kzf.jpg"
+                         alt="Mackenyu">
+                    <h3>Mackenyu</h3>
+                    <h4>Roronoa Zoro</h4>
+                    <div class="reward">1,111,000,000 B.</div>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="cast-item">
+                    <div class="wanted-label">✦ WANTED ✦</div>
+                    <div class="wanted-title">DEAD OR ALIVE</div>
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/y23GTdDPcryBVtSWjY9q2O9nzwV.jpg"
+                         alt="Emily Rudd">
+                    <h3>Emily Rudd</h3>
+                    <h4>Nami</h4>
+                    <div class="reward">366,000,000 B.</div>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="cast-item">
+                    <div class="wanted-label">✦ WANTED ✦</div>
+                    <div class="wanted-title">DEAD OR ALIVE</div>
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/c6uP24uFslQ3hnEgqPkojAbYuZn.jpg"
+                         alt="Jacob Gipson">
+                    <h3>Jacob Gipson</h3>
+                    <h4>Usopp</h4>
+                    <div class="reward">500,000,000 B.</div>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="cast-item">
+                    <div class="wanted-label">✦ WANTED  ✦</div>
+                    <div class="wanted-title">DEAD OR ALIVE</div>
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/3EXMkfzB8EXn3ZJPJvK6OfPWLfz.jpg"
+                         alt="Taz Skyler">
+                    <h3>Taz Skyler</h3>
+                    <h4>Sanji</h4>
+                    <div class="reward">1,032,000,000 B.</div>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="cast-item">
+                    <div class="wanted-label">✦ WANTED  ✦</div>
+                    <div class="wanted-title">DEAD OR ALIVE</div>
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/tZHb1fZkIuMR7T4cWM62MncEzpC.jpg"
+                         alt="Lera Abova">
+                    <h3>Lera Abova</h3>
+                    <h4>Nico Robin</h4>
+                    <div class="reward">930,000,000 B.</div>
+                </div>
+
+                <!-- Tarjeta 7 -->
+                <div class="cast-item">
+                    <div class="wanted-title">DEAD OR ALIVE</div>
+                    <div class="wanted-label">✦ WANTED ✦</div>
+                    <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/cclus0QG5JAE09cS5OxetC7Mios.jpg"
+                         alt="Steve John Ward">
+                    <h3>Steve John Ward</h3>
+                    <h4>Mihawk</h4>
+                    <div class="reward">3,590,000,000 B.</div>
+                </div>
+
             </div>
-            <div class="cast-item"> 
-                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg" alt="Keira Knightley photo">
-                <h1> Keira Knightley</h1>
-             
         </div>
-           <div class="cast-item"> 
-                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg" alt="Keira Knightley photo">
-                <h1> Keira Knightley</h1>
-             
-        </div> <div class="cast-item"> 
-                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg" alt="Keira Knightley photo">
-                <h1> Keira Knightley</h1>
-             
-        </div> <div class="cast-item"> 
-                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg" alt="Keira Knightley photo">
-                <h1> Keira Knightley</h1>
-             
-        </div> <div class="cast-item"> 
-                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg" alt="Keira Knightley photo">
-                <h1> Keira Knightley</h1>
-             
-        </div> <div class="cast-item"> 
-                <img src="https://media.themoviedb.org/t/p/w300_and_h450_face/bRC1B2VwV0wK3ElciFAK6QZf2wD.jpg" alt="Keira Knightley photo">
-                <h1> Keira Knightley</h1>
-             
-        </div>
+
     </article>
 
     <footer>
         <p> Proyecto de ejemplo de la materia Programación Web</p>
-        <p><a href="github.com\miusuario\elrepo"> GitHub Repository</a></p>
+        <p><a href="https://github.com/VictorMML90/peliculitas"> GitHub Repository</a></p>
     </footer>
 
     </body>
