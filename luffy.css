@@ -24,6 +24,7 @@
         }
 
         body {
+            overflow-x: hidden; /* evita scroll horizontal en toda la página */
             background-color: var(--marino);
             color: var(--texto-claro);
             font-family: 'Outfit', sans-serif;
@@ -622,5 +623,22 @@
                 width: 100px;
                 height: 150px;
             }
+                /* NUEVO — fix del scroll horizontal */
+           .filmography-section {
+           overflow-x: auto;
+            }
+
+           .film-table {
+           min-width: 340px;
+           /* font-size ya lo tienes, no lo toques */
+           }
+
+          .main-content {
+          padding: 1.5rem 0.6rem; /* cambia el que ya tienes de 1rem a 0.6rem */
+          }
+
+          .actor-hero {
+          padding: 1.5rem 0.6rem; /* igual aquí */
+          }
         }
 
